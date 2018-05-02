@@ -202,7 +202,7 @@ void loop()
   // handle right 3-way switch
   if (analog[5] < 300)
     ppm[5] = 1150;
-  else if (analog[6] < 700)
+  else if (analog[5] < 700)
     ppm[5] = 1500;
   else
     ppm[5] = 1850; 
