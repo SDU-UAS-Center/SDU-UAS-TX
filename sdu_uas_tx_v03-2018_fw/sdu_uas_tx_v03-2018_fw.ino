@@ -195,17 +195,17 @@ void loop()
   if (analog[4] < 300)
     ppm[4] = 1150;
   else if (analog[4] < 700)
-    ppm[4] == 1500;
+    ppm[4] = 1500;
   else
-    ppm[4] == 1850;
+    ppm[4] = 1850;
   
   // handle right 3-way switch
-  if (analog[6] < 300)
+  if (analog[5] < 300)
     ppm[5] = 1150;
-  else if (analog[6] < 700)
-    ppm[5] == 1500;
+  else if (analog[5] < 700)
+    ppm[5] = 1500;
   else
-    ppm[5] ==1850; 
+    ppm[5] = 1850; 
 
   // unused for now 
   ppm[6] = default_servo_value;
